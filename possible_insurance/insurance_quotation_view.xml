@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="action_insurance_quotation" model="ir.actions.act_window">
+            <field name="name">Insurance Quotation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="context">{}</field>
+        </record>
+
+        <!--<menuitem action="action_insurance_quotation"-->
+                  <!--id="menu_insurance_quotation"-->
+                  <!--parent="base.menu_base_config" groups="base.group_systembase.group_sale_salesman,base.group_sale_manager"-->
+                  <!--sequence="10"/>-->
+        <menuitem action="action_insurance_quotation"
+                  id="menu_insurance_quotation"
+                  parent="base.menu_base_config" groups="base.group_system"
+                  sequence="7"/>
+
+    </data>
+</openerp>
+
